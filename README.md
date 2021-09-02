@@ -69,39 +69,39 @@ Working on a data science project is an iterative process and that is especially
 The following are the titles and scores of the naive models.
 
 Decision Tree: 75.47% Accuracy
-![decisiontree]
+![decisiontree](https://raw.githubusercontent.com/joshblumer/dsc-phase-3-project/main/decisiontree.png)
 
 Bagged Tree: 79.30% Accuracy
-![baggedtree]
+![baggedtree](https://raw.githubusercontent.com/joshblumer/dsc-phase-3-project/main/baggedtree.png)
 
 Random Forest: 67.39% Accuracy
-![randomforest]
+![randomforest](https://raw.githubusercontent.com/joshblumer/dsc-phase-3-project/main/randomforest.png)
 
 XGBoost: 74.71% Accuracy
-![xgboost]
+![xgboost](https://raw.githubusercontent.com/joshblumer/dsc-phase-3-project/main/xgboost.png)
 
 The Bagged Tree model had the highest test score but was highly over-fit and did not generalize well to the test data and the XGBoost model was not over-fit near as bad so next I instantiated a GridSearch Cross Validation search to check ranges of hyper-parameter values for the best model fit. 
 
 The first GridSearch returned an estimator that scored 80.21% Accuracy
-![gridsearch1]
+![gridsearch1](https://raw.githubusercontent.com/joshblumer/dsc-phase-3-project/main/gridsearch1.png)
 
 After the improvement from the first GridSearch I expanded the range of values to check in a second GridSearch.
 
 The second GridSearch returned an estimator that scored 81.06% Accuracy. 
-![gridsearch2]
+![gridsearch2](https://raw.githubusercontent.com/joshblumer/dsc-phase-3-project/main/gridsearch2.png)
 
 After tuning the hyper-parameters of the XGBoost model I went back to the training data to see if there were any fluctuations that could be made to improve the models performance. I experimented with different value counts in the categorical feature columns that contained many values, dropped continuous features with very heavily skewed distributions, and tried a model with none of the columns removed that I had originally removed, but none improved on the initial data preprocessing. 
 
 I was able to improve the accuracy of the model by MinMax Scaling the data first to 81.17% Accuracy. 
-![minmax]
+![minmax](https://raw.githubusercontent.com/joshblumer/dsc-phase-3-project/main/minmax.png)
 
 I also attempted to use SMOTE(Synthetic Minority Over-Sampling Technique) due to the class imbalance of the target variable. It improved the training score but reduced the test score to 78.59% Accuracy.
-![smote]
+![smote](https://raw.githubusercontent.com/joshblumer/dsc-phase-3-project/main/smote.png)
 
 The last step in the modeling portion of the project was to process the test file, model it using the best performing model I had achieved, and submit it to DrivenData for scoring. The test data file varied from the training file so I experimented with different column value counts with it as well, but the best score returned came from the same model that performed best on the training file which was the second GridSearchCV hyper-parameter settings combined with MinMaxScaling the data. 
 
 The highest score achieved in the models submitted to DrivenData was 80.63% Accuracy.
-![drivendata]
+![drivendata](https://raw.githubusercontent.com/joshblumer/dsc-phase-3-project/main/drivendata.png)
 
 <a name="Conclusion"></a>
 ### Conclusions
