@@ -6,7 +6,7 @@ Hosted by DrivenData
 
 ## Introduction
 
-An exploratory data analysis of Tanzanian water well data collected by Taarifa and the Tanzanian Ministry of Water and provided by [Driven Data].(https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/) 
+An exploratory data analysis of Tanzanian water well data collected by Taarifa and the Tanzanian Ministry of Water and provided by [Driven Data](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/) 
 
 My goal in this analysis is to extract insight from patterns in the dataset features and model them using classification techniques to predict whether a given well is functional, non functional, or needing repair. Being able to predict the condition of water wells and when they may fail is an important facet of preventative maintainance in order to provide clean water to as many Tanzanian communities as possible. 
 
