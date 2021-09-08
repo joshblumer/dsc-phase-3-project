@@ -105,8 +105,8 @@ I also attempted to use SMOTE(Synthetic Minority Over-Sampling Technique) due to
 
 The last step in the modeling portion of the project was to process the test file, model it using the best performing model I had achieved, and submit it to DrivenData for scoring. The test data file varied from the training file so I experimented with different column value counts with it as well, but the best score returned came from the same model that performed best on the training file which was the second GridSearchCV hyper-parameter settings combined with MinMaxScaling the data. 
 
-The highest score achieved in the models submitted to DrivenData was 80.63% Accuracy.
-![drivendata](https://raw.githubusercontent.com/joshblumer/dsc-phase-3-project/main/images/drivendata.png)
+The highest score achieved in the models submitted to DrivenData was 80.93% Accuracy.
+![drivendata](https://raw.githubusercontent.com/joshblumer/dsc-phase-3-project/main/images/high_score.png)
 
 <a name="Conclusion"></a>
 ### Conclusions
